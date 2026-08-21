@@ -1,6 +1,11 @@
+#!/usr/bin/env bash
+# Regenerate hero-{light,dark}.svg. Usage: bash assets/gen-hero.sh
+set -e; cd "$(dirname "$0")"
+gen() { # file bg fg muted grid accent chipbg chipborder
+cat > "$1" <<EOF
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-label="Shuling Tang — Generative Vision">
   <defs>
-    <radialGradient id="g1"><stop offset="0" stop-color="#34C7B5" stop-opacity="0.55"/><stop offset="1" stop-color="#34C7B5" stop-opacity="0"/></radialGradient>
+    <radialGradient id="g1"><stop offset="0" stop-color="$6" stop-opacity="0.55"/><stop offset="1" stop-color="$6" stop-opacity="0"/></radialGradient>
     <radialGradient id="g2"><stop offset="0" stop-color="#7C8CFF" stop-opacity="0.45"/><stop offset="1" stop-color="#7C8CFF" stop-opacity="0"/></radialGradient>
     <radialGradient id="g3"><stop offset="0" stop-color="#FFB08A" stop-opacity="0.45"/><stop offset="1" stop-color="#FFB08A" stop-opacity="0"/></radialGradient>
     <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="28"/></filter>
@@ -14,8 +19,8 @@
       @media (prefers-reduced-motion:reduce){.b1,.b2,.b3{animation:none}}
     </style>
   </defs>
-  <rect width="1200" height="400" fill="#ffffff"/>
-  <g stroke="#ececf0" stroke-width="1">
+  <rect width="1200" height="400" fill="$2"/>
+  <g stroke="$5" stroke-width="1">
     <path d="M760 60V340M840 60V340M920 60V340M1000 60V340M1080 60V340M1160 60V340"/>
     <path d="M720 100H1200M720 180H1200M720 260H1200M720 340H1200"/>
   </g>
@@ -25,14 +30,18 @@
     <circle class="b3" cx="860" cy="300" r="130" fill="url(#g3)"/>
   </g>
   <g class="t">
-    <text x="88" y="128" font-size="13" letter-spacing="4" fill="#6e6e73" font-weight="600">GENERATIVE VISION · IMAGE EDITING · DISTILLATION</text>
-    <text x="86" y="208" font-size="64" font-weight="700" letter-spacing="-2" fill="#1d1d1f">Shuling Tang</text>
-    <text x="88" y="252" font-size="20" fill="#6e6e73">让扩散模型学会只改该改的地方。</text>
-    <line x1="88" y1="284" x2="136" y2="284" stroke="#34C7B5" stroke-width="3" stroke-linecap="round"/>
-    <g class="m" font-size="13" fill="#6e6e73">
-      <rect x="88" y="304" width="138" height="30" rx="15" fill="#f5f5f7" stroke="#e5e5ea"/><text x="157" y="324" text-anchor="middle">diffusion</text>
-      <rect x="236" y="304" width="186" height="30" rx="15" fill="#f5f5f7" stroke="#e5e5ea"/><text x="329" y="324" text-anchor="middle">teacher → student</text>
-      <rect x="432" y="304" width="150" height="30" rx="15" fill="#f5f5f7" stroke="#e5e5ea"/><text x="507" y="324" text-anchor="middle">agentic tools</text>
+    <text x="88" y="128" font-size="13" letter-spacing="4" fill="$4" font-weight="600">GENERATIVE VISION · IMAGE EDITING · DISTILLATION</text>
+    <text x="86" y="208" font-size="64" font-weight="700" letter-spacing="-2" fill="$3">Shuling Tang</text>
+    <text x="88" y="252" font-size="20" fill="$4">让扩散模型学会只改该改的地方。</text>
+    <line x1="88" y1="284" x2="136" y2="284" stroke="$6" stroke-width="3" stroke-linecap="round"/>
+    <g class="m" font-size="13" fill="$4">
+      <rect x="88" y="304" width="138" height="30" rx="15" fill="$7" stroke="$8"/><text x="157" y="324" text-anchor="middle">diffusion</text>
+      <rect x="236" y="304" width="186" height="30" rx="15" fill="$7" stroke="$8"/><text x="329" y="324" text-anchor="middle">teacher → student</text>
+      <rect x="432" y="304" width="150" height="30" rx="15" fill="$7" stroke="$8"/><text x="507" y="324" text-anchor="middle">agentic tools</text>
     </g>
   </g>
 </svg>
+EOF
+}
+gen hero-light.svg "#ffffff" "#1d1d1f" "#6e6e73" "#ececf0" "#34C7B5" "#f5f5f7" "#e5e5ea"
+gen hero-dark.svg  "#0d1117" "#f5f5f7" "#9aa0a6" "#1c2230" "#2DD4BF" "#161b22" "#30363d"

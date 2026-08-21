@@ -1,65 +1,51 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ShulingTang/ShulingTang/main/assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ShulingTang/ShulingTang/main/assets/hero-light.svg">
-  <img alt="Shuling Tang — 计算机视觉与图像色彩" src="https://raw.githubusercontent.com/ShulingTang/ShulingTang/main/assets/hero-light.svg">
+  <img alt="Shuling Tang — Generative Vision" src="https://raw.githubusercontent.com/ShulingTang/ShulingTang/main/assets/hero-light.svg" width="100%">
 </picture>
-
-### 你好，我是 Shuling 👋
-
-在 [NUDT](https://www.nudt.edu.cn/) 做计算机视觉，主要绕着**人体解析**、**图像色彩**和**生成结果怎么评**这几件事打转。
-业余时间喜欢把这些能力接进日常：记账、抓取、日报，能自动的就别手动。
-折腾过程写在 **[shulingtang.github.io](https://shulingtang.github.io)**。
 
 <br>
 
-### 🧭 在做的事
+做生成式视觉的算法研究员,工作第五年。
+过去几年的主线是**图像编辑类扩散模型**:怎么让模型听懂指令、只动该动的区域、并且在工程上跑得够快。
+业余把同一套方法论用在自己身上——能交给 Agent 的事,就不再手动做第二遍。
+
+<br>
+
+### Focus
 
 | | |
 | :-- | :-- |
-| 🧠 **人体解析 / 语义分割** | 从训练到能真正跑起来的推理服务，中间那段最有意思 |
-| 🎨 **图像色彩** | 色彩迁移、风格化，以及"改完到底好没好"的量化评测 |
-| 🤖 **LLM 工具链** | 把重复劳动交出去：账单整理、内容抓取、自动化编排 |
-| ✍️ **写字** | 踩过的坑记下来，省得下次再踩 |
+| **可控图像编辑** | 指令驱动的局部编辑,身份与版面保持,人像 / 发型 / 色彩这类"差一点就假"的场景 |
+| **蒸馏与加速** | 多教师 → 单学生的在线策略蒸馏;把几十步采样压到几步而不掉质量 |
+| **评测** | 编辑"有没有改好"不能靠肉眼:恒等基线、成对对比、可复现的评测流水线 |
+| **Agent 工具链** | 把训练、看图、记账、抓取这些重复劳动接进 LLM Agent,自己用,顺手开源 |
 
 <br>
 
-### 🛠 常用
+### How I work
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=flat-square&logo=numpy&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white)
-![Hexo](https://img.shields.io/badge/Hexo-0E83CD?style=flat-square&logo=hexo&logoColor=white)
+- 先建基线再谈效果——没有"保持不变"的对照,所有"变好了"都是错觉
+- 数据决定上限:宁可花一周清数据,不花一天调超参
+- 本地能复现的才算完成;一切自动化先在冒烟集上跑通
+- 记录踩过的坑,比记录成功更有用
 
 <br>
 
-### ✍️ 最近写的
+### Toolbox
 
-- [我在 beancount-refactor 频道做了一次账单重构实战](https://shulingtang.github.io/2026/02/26/beancount-refactor-log/)
-- [作为一个助手，我如何把 OpenClaw 变得真正可用](https://shulingtang.github.io/2026/02/24/openclaw-day-1/)
-
-> 更多在 [博客归档](https://shulingtang.github.io/archives)
+`PyTorch` · `Diffusers` · `LoRA` · `FSDP / DeepSpeed` · `CUDA` · `Docker` · `Linux` · `Claude Code / MCP` · `n8n` · `Python`
 
 <br>
 
-### 📊 GitHub
+### Writing
+
+偶尔写点东西,在 **[shulingtang.github.io](https://shulingtang.github.io)**。
+
+<br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=ShulingTang&amp;show_icons=true&amp;hide_border=true&amp;hide_title=true&amp;theme=github_dark&amp;icon_color=4FD1C5&amp;text_color=8B949E&amp;bg_color=00000000">
-  <img alt="ShulingTang 的 GitHub 统计" src="https://github-readme-stats.vercel.app/api?username=ShulingTang&amp;show_icons=true&amp;hide_border=true&amp;hide_title=true&amp;theme=graywhite&amp;icon_color=0E9384&amp;text_color=59636E&amp;bg_color=00000000" height="160">
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=ShulingTang&amp;layout=compact&amp;hide_border=true&amp;hide_title=true&amp;langs_count=8&amp;theme=github_dark&amp;text_color=8B949E&amp;bg_color=00000000">
-  <img alt="常用语言" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ShulingTang&amp;layout=compact&amp;hide_border=true&amp;hide_title=true&amp;langs_count=8&amp;theme=graywhite&amp;text_color=59636E&amp;bg_color=00000000" height="160">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ShulingTang/ShulingTang/output/github-snake-dark.svg">
+  <img alt="contribution graph" src="https://raw.githubusercontent.com/ShulingTang/ShulingTang/output/github-snake.svg" width="100%">
 </picture>
 
-<br>
-
-<sub>
-  <a href="https://shulingtang.github.io">Blog</a> ·
-  <a href="https://shulingtang.github.io/archives">Archives</a>
-</sub>
+<p align="right"><sub>Less, but better.</sub></p>
