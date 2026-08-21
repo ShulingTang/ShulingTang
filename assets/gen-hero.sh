@@ -32,7 +32,7 @@ cat > "$1" <<EOF
   <g class="t">
     <text x="88" y="128" font-size="13" letter-spacing="4" fill="$4" font-weight="600">GENERATIVE VISION · IMAGE EDITING · DISTILLATION</text>
     <text x="86" y="208" font-size="64" font-weight="700" letter-spacing="-2" fill="$3">Shuling Tang</text>
-    <text x="88" y="252" font-size="20" fill="$4">让扩散模型学会只改该改的地方。</text>
+    <text x="88" y="252" font-size="20" fill="$4">Teaching diffusion models to change only what should change.</text>
     <line x1="88" y1="284" x2="136" y2="284" stroke="$6" stroke-width="3" stroke-linecap="round"/>
     <g class="m" font-size="13" fill="$4">
       <rect x="88" y="304" width="138" height="30" rx="15" fill="$7" stroke="$8"/><text x="157" y="324" text-anchor="middle">diffusion</text>

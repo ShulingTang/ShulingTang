@@ -27,7 +27,7 @@
   <g class="t">
     <text x="88" y="128" font-size="13" letter-spacing="4" fill="#6e6e73" font-weight="600">GENERATIVE VISION · IMAGE EDITING · DISTILLATION</text>
     <text x="86" y="208" font-size="64" font-weight="700" letter-spacing="-2" fill="#1d1d1f">Shuling Tang</text>
-    <text x="88" y="252" font-size="20" fill="#6e6e73">让扩散模型学会只改该改的地方。</text>
+    <text x="88" y="252" font-size="20" fill="#6e6e73">Teaching diffusion models to change only what should change.</text>
     <line x1="88" y1="284" x2="136" y2="284" stroke="#34C7B5" stroke-width="3" stroke-linecap="round"/>
     <g class="m" font-size="13" fill="#6e6e73">
       <rect x="88" y="304" width="138" height="30" rx="15" fill="#f5f5f7" stroke="#e5e5ea"/><text x="157" y="324" text-anchor="middle">diffusion</text>
