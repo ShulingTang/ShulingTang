@@ -36,7 +36,7 @@ jobs:
           USERNAME: ${{ github.repository_owner }}
           SETTING_JSON: .github/3d-contrib.json
 
-      - run: mv profile-3d-contrib/*.svg dist/ && ls -la dist
+      - run: sudo cp profile-3d-contrib/*.svg dist/ && sudo chown -R "$USER" dist && ls -la dist
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
