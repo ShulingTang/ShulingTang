@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg">
-  <img alt="Shuling Tang — 计算机视觉与图像色彩" src="./assets/hero-light.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ShulingTang/ShulingTang/main/assets/hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ShulingTang/ShulingTang/main/assets/hero-light.svg">
+  <img alt="Shuling Tang — 计算机视觉与图像色彩" src="https://raw.githubusercontent.com/ShulingTang/ShulingTang/main/assets/hero-light.svg">
 </picture>
 
 ### 你好，我是 Shuling 👋
